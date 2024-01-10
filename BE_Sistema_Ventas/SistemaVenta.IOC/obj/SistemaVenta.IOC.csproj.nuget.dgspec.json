@@ -1,0 +1,394 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj",
+        "projectName": "SistemaVenta.BLL",
+        "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj"
+              },
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DTO\\SistemaVenta.DTO.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DTO\\SistemaVenta.DTO.csproj"
+              },
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj"
+              },
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Utility\\SistemaVenta.Utility.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Utility\\SistemaVenta.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj",
+        "projectName": "SistemaVenta.DAL",
+        "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DTO\\SistemaVenta.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DTO\\SistemaVenta.DTO.csproj",
+        "projectName": "SistemaVenta.DTO",
+        "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DTO\\SistemaVenta.DTO.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
+        "projectName": "SistemaVenta.IOC",
+        "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.IOC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj"
+              },
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj"
+              },
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Utility\\SistemaVenta.Utility.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Utility\\SistemaVenta.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj",
+        "projectName": "SistemaVenta.Model",
+        "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Utility\\SistemaVenta.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Utility\\SistemaVenta.Utility.csproj",
+        "projectName": "SistemaVenta.Utility",
+        "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Utility\\SistemaVenta.Utility.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DTO\\SistemaVenta.DTO.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.DTO\\SistemaVenta.DTO.csproj"
+              },
+              "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj": {
+                "projectPath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.Model\\SistemaVenta.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

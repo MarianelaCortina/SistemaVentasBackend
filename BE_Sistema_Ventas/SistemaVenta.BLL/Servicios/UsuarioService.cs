@@ -43,7 +43,7 @@ namespace SistemaVenta.BLL.Servicios
         {
             try
             {
-                var queryUsuario = await _usuarioRepository.Consult(u => u.Correo == correo & u.Clave == clave);
+                var queryUsuario = await _usuarioRepository.Consult(u => u.Correo == correo & u.Clave == clave & u.EsActivo == true);
                 if (queryUsuario.FirstOrDefault() == null)
                     throw new TaskCanceledException("El usuario no existe");
 

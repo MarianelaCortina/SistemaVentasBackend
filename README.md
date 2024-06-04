@@ -1,13 +1,23 @@
 El backend del Sistema de ventas lo realicé utilizando .Net Core 8. 
 
-El sistema cuenta con un sistema de login, administración de roles, menú que se mostrará completo o no según el tipo de rol.
+El sistema cuenta con:
+* Un sistema de login, administración de roles, menú que se mostrará completo o no según el tipo de rol logueado (Admin, Empleado o Supervisor).
+* Sección Dashboard: en el cual se muestran las ventas realizadas en la ultima semana, en formato de gráfico de barras horizontales. Cada barra representa el total de ventas de cada día.
+* Listado de productos.
+* Sección Ventas, donde el usuario podrá seleccionar los productos y registrar la venta, la cual se guardará y te brindará un numero de operación.
+* Sección Historial ventas: en donde se puede buscar las ventas realizadas, por un rango de fechas o por el número de ventas y luego te las muestra en forma de listado. También te permite acceder al detalle de cada venta.
+* Sección Reporte de ventas: en esta sección se puede seleccionar el reporte de las ventas, seleccionando una fecha de inicio y una fecha de fin y luego se mostrarán en un listado. Además, cuenta con un botón que te permite exportar la información en formato Excel.
+  
 
 Actualmente, el backend y base de datos estan alojados en el hosting Somee; el cual podras visualizar en el siguiente link: https://www.sistemaventas.somee.com/swagger/index.html
 
-![Api-Swagger](https://github.com/MarianelaCortina/SistemaVentasBackend/assets/73797352/f8359e55-fb26-497f-bd35-09919d352dba)
+
+![Captura-backend-somee](https://github.com/MarianelaCortina/SistemaVentasBackend/assets/73797352/d296b481-4821-4ca1-a766-d1e610100b58)
+
 
 
 El proyecto está conformado por siete capas: API, Negocio, Dal, DTO, Model, Ioc, Utility.
+
 
 ![image](https://github.com/MarianelaCortina/SistemaVentasBackend/assets/73797352/b2980652-389c-4195-9e0f-a52155a640d8)
 

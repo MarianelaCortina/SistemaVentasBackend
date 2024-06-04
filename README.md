@@ -1,4 +1,8 @@
-El backend del Sistema de ventas lo realicé utilizando .Net Core 8. El sistema cuenta con un sistema de login, administración de roles, menú que se mostrará completo o no según el tipo de rol.
+El backend del Sistema de ventas lo realicé utilizando .Net Core 8. 
+
+El sistema cuenta con un sistema de login, administración de roles, menú que se mostrará completo o no según el tipo de rol.
+
+Actualmente, el backend y base de datos estan alojados en el hosting Somee; el cual podras visualizar en el siguiente link: https://www.sistemaventas.somee.com/swagger/index.html
 
 ![Api-Swagger](https://github.com/MarianelaCortina/SistemaVentasBackend/assets/73797352/f8359e55-fb26-497f-bd35-09919d352dba)
 

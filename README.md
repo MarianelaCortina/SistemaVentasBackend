@@ -2,7 +2,7 @@ El backend del Sistema de ventas lo realicé utilizando .Net Core 8.
 
 El sistema cuenta con:
 * Un sistema de login, administración de roles, menú que se mostrará completo o no según el tipo de rol logueado (Admin, Empleado o Supervisor).
-* Sección Dashboard: en el cual se muestran las ventas realizadas en la ultima semana, en formato de gráfico de barras horizontales. Cada barra representa el total de ventas de cada día.
+* Sección Dashboard: en el cual se muestran las ventas realizadas en la ultima semana, en formato de gráfico de barras verticales. Cada barra representa el total de ventas de cada día.
 * Listado de productos.
 * Sección Ventas, donde el usuario podrá seleccionar los productos y registrar la venta, la cual se guardará y te brindará un numero de operación.
 * Sección Historial ventas: en donde se puede buscar las ventas realizadas, por un rango de fechas o por el número de ventas y luego te las muestra en forma de listado. También te permite acceder al detalle de cada venta.

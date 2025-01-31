@@ -10,7 +10,8 @@ El sistema cuenta con:
   
 
 
-![Captura-backend-somee](https://github.com/MarianelaCortina/SistemaVentasBackend/assets/73797352/d296b481-4821-4ca1-a766-d1e610100b58)
+![Sistema ventas backend para linkedin](https://github.com/user-attachments/assets/ff0832b6-3dc7-4e3c-90c1-fe61849ec6b9)
+
 
 
 

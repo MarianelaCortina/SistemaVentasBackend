@@ -9,8 +9,6 @@ El sistema cuenta con:
 * Sección Reporte de ventas: en esta sección se puede seleccionar el reporte de las ventas, seleccionando una fecha de inicio y una fecha de fin y luego se mostrarán en un listado. Además, cuenta con un botón que te permite exportar la información en formato Excel.
   
 
-Actualmente, el backend y base de datos estan alojados en el hosting Somee; el cual podras visualizar en el siguiente link: https://www.sistemaventas.somee.com/swagger/index.html
-
 
 ![Captura-backend-somee](https://github.com/MarianelaCortina/SistemaVentasBackend/assets/73797352/d296b481-4821-4ca1-a766-d1e610100b58)
 

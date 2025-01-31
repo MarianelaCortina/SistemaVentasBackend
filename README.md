@@ -2,6 +2,7 @@ El backend del Sistema de ventas lo realicé utilizando .Net Core 8.
 
 El sistema cuenta con:
 * Un sistema de login, administración de roles, menú que se mostrará completo o no según el tipo de rol logueado (Admin, Empleado o Supervisor).
+* Autenticación y seguridad: Implementé un sistema de login con autenticación basada en tokens JWT, garantizando la seguridad y protección de las sesiones de los usuarios.
 * Sección Dashboard: en el cual se muestran las ventas realizadas en la ultima semana, en formato de gráfico de barras verticales. Cada barra representa el total de ventas de cada día.
 * Listado de productos.
 * Sección Ventas, donde el usuario podrá seleccionar los productos y registrar la venta, la cual se guardará y te brindará un numero de operación.

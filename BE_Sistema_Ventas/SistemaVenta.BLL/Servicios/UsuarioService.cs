@@ -10,6 +10,8 @@ using SistemaVenta.BLL.Servicios.Contrato;
 using SistemaVenta.DAL.Repository.Contrato;
 using SistemaVenta.DTO;
 using SistemaVenta.Model;
+using BCrypt.Net;
+
 
 namespace SistemaVenta.BLL.Servicios
 {
@@ -43,23 +45,43 @@ namespace SistemaVenta.BLL.Servicios
         {
             try
             {
-                var queryUsuario = await _usuarioRepository.Consult(u => u.Correo == correo & u.Clave == clave & u.EsActivo == true);
-                if (queryUsuario.FirstOrDefault() == null)
+                // Busca el usuario por correo y que esté activo
+                var queryUsuario = await _usuarioRepository.Consult(u => u.Correo == correo && u.EsActivo == true);
+
+                var usuario = queryUsuario.Include(rol => rol.IdRolNavigation).FirstOrDefault();
+
+                if (usuario == null)
                     throw new TaskCanceledException("El usuario no existe");
 
-                Usuario devolverUsuario = queryUsuario.Include(rol => rol.IdRolNavigation).First();
+                // Verifica la contraseña
+                bool isPasswordValid = BCrypt.Net.BCrypt.Verify(clave, usuario.Clave);
 
-                return _mapper.Map<SesionDTO>(devolverUsuario);
+                if (!isPasswordValid)
+                    throw new TaskCanceledException("La contraseña es incorrecta");
+
+
+                // Si pasa la validación, devuelve el usuario
+                return _mapper.Map<SesionDTO>(usuario);
             }
-            catch 
+            catch
             {
                 throw;
             }
         }
+
         public async Task<UsuarioDTO> Crear(UsuarioDTO model)
         {
             try
             {
+                var existeUsuario = await _usuarioRepository.Get(u => u.Correo == model.Correo);
+
+                if (existeUsuario != null)
+                    throw new InvalidOperationException("El correo ya está en uso");
+
+                // Hash de la contraseña antes de guardarla
+                model.Clave = BCrypt.Net.BCrypt.HashPassword(model.Clave);
+
+
                 var usuarioCreado = await _usuarioRepository.Create(_mapper.Map<Usuario>(model));
 
                 if (usuarioCreado.IdUsuario == 0)

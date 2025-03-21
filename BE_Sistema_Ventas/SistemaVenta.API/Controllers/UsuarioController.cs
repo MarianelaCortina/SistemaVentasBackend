@@ -5,6 +5,8 @@ using SistemaVenta.BLL.Servicios.Contrato;
 using SistemaVenta.DTO;
 using SistemaVenta.API.Utilidad;
 using SistemaVenta.BLL.Servicios;
+using Microsoft.AspNetCore.Authorization;
+using SistemaVenta.Model;
 
 namespace SistemaVenta.API.Controllers
 {
@@ -13,14 +15,15 @@ namespace SistemaVenta.API.Controllers
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioService _usuarioService;
+        private readonly IJwtService  _jwtService;
 
-        public UsuarioController(IUsuarioService usuarioService)
+        public UsuarioController(IUsuarioService usuarioService, IJwtService jwtService)
         {
             _usuarioService = usuarioService;
+            _jwtService = jwtService ?? throw new ArgumentNullException(nameof(jwtService));
         }
 
-        [HttpGet]
-        [Route("Lista")]
+        [HttpGet("Lista")]
         public async Task<IActionResult> Lista()
         {
             var rsp = new Response<List<UsuarioDTO>>();
@@ -38,25 +41,44 @@ namespace SistemaVenta.API.Controllers
             return Ok(rsp);
         }
 
-        [HttpPost]
-        [Route("IniciarSesion")]
-
+        [HttpPost("IniciarSesion")]
         public async Task<IActionResult> IniciarSesion([FromBody] LoginDTO login)
         {
-            var rsp = new Response<SesionDTO>();
-
             try
             {
-                rsp.status = true;
-                rsp.value = await _usuarioService.ValidarCredenciales(login.Correo, login.Clave);
+                // Validar credenciales
+                var sesionUsuario = await _usuarioService.ValidarCredenciales(login.Correo, login.Clave);
+
+                // Generar token JWT
+                var token = _jwtService.GenerarToken(sesionUsuario);
+
+                // Retornar la respuesta en formato JSON
+                return Ok(new
+                {
+                    Status = true,
+                    Value = new
+                    {
+                        Token = token,
+                        Usuario = new
+                        {
+                            idUsuario = sesionUsuario.IdUsuario,
+                            correo = sesionUsuario.Correo,
+                            Rol = sesionUsuario.RolDescripcion
+                        }
+                    }
+                });
             }
-            catch (Exception ex)
+            catch (TaskCanceledException ex) // Excepción lanzada en ValidarCredenciales
             {
-                rsp.status = false;
-                rsp.msg = ex.Message;
+                return Unauthorized(new { mensaje = ex.Message });
             }
-            return Ok(rsp);
+            catch (Exception ex) // Cualquier otro error inesperado
+            {
+                return StatusCode(500, new { mensaje = "Error interno en el servidor", detalle = ex.Message });
+            }
         }
+
+
 
         [HttpPost]
         [Route("Guardar")]
@@ -105,7 +127,7 @@ namespace SistemaVenta.API.Controllers
         public async Task<IActionResult> Eliminar(int id)
         {
             var rsp = new Response<bool>();
-
+                                                                                         
             try
             {
                 rsp.status = true;
@@ -118,6 +140,35 @@ namespace SistemaVenta.API.Controllers
             }
             return Ok(rsp);
         }
-    }  
-   
+
+        //[HttpPost]
+        //[Route("ActualizarContrasenas")]
+        //public async Task<IActionResult> ActualizarContrasenas()
+        //{
+        //    var rsp = new Response<string>();
+        //    try
+        //    {
+        //        var usuarios = await _usuarioService.Lista(); // Obtén todos los usuarios
+        //        foreach (var usuario in usuarios)
+        //        {
+        //            // Genera un hash para cada contraseña
+        //            usuario.Clave = BCrypt.Net.BCrypt.HashPassword("123");
+        //            //usuario.Clave = BCrypt.Net.BCrypt.HashPassword("NuevaContrasena123");
+        //            await _usuarioService.Editar(usuario); // Actualiza el usuario
+        //        }
+        //        rsp.status = true;
+        //        rsp.value = "Contraseñas actualizadas correctamente";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        rsp.status = false;
+        //        rsp.msg = ex.Message;
+        //    }
+        //    return Ok(rsp);
+        //}
+
+    }
+
+
+
 }

@@ -9,3 +9,4 @@ C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.DTO\obj\Debug\net8.0\refint\SistemaVenta.DTO.dll
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.DTO\obj\Debug\net8.0\SistemaVenta.DTO.pdb
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.DTO\obj\Debug\net8.0\ref\SistemaVenta.DTO.dll
+C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.DTO\obj\Debug\net8.0\SistemaVenta.DTO.sourcelink.json

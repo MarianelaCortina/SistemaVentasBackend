@@ -15,3 +15,4 @@ C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.Utility\bin\Debug\net8.0\SistemaVenta.Model.pdb
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.Utility\obj\Debug\net8.0\SistemaVenta.Utility.csproj.AssemblyReference.cache
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.Utility\obj\Debug\net8.0\SistemaVenta.Utility.csproj.CopyComplete
+C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.Utility\obj\Debug\net8.0\SistemaVenta.Utility.sourcelink.json

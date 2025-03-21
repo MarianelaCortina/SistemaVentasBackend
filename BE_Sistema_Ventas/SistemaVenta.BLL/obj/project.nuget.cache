@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ECJFliDN46aU7x5VMjokf+4TpGOgsI2YnKUBkEaEv/ABeGLNs+47BHSr/yVCcng9bA3ow0pFH3GNvSiayjsKrQ==",
+  "dgSpecHash": "pp6TDWEsy6QwfFreBezh7LVfOaFS+EvwkeoHUHut8W9h+xDD6qyiXQlCw4mmnY3BpzEMddrC66IpDlbE7h2vGw==",
   "success": true,
   "projectFilePath": "C:\\Users\\maria\\Desktop\\Folders\\Sistema_Ventas_Angular_NetCore\\BE-Sistemas_Ventas\\BE_Sistema_Ventas\\SistemaVenta.BLL\\SistemaVenta.BLL.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\maria\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",

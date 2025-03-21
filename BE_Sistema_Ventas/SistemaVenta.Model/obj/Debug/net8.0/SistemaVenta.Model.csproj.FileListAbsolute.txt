@@ -12,3 +12,4 @@ C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.Model\obj\Debug\net8.0\SistemaVenta.Model.pdb
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.Model\obj\Debug\net8.0\SistemaVenta.Model.genruntimeconfig.cache
 C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.Model\obj\Debug\net8.0\ref\SistemaVenta.Model.dll
+C:\Users\maria\Desktop\Folders\Sistema_Ventas_Angular_NetCore\BE-Sistemas_Ventas\BE_Sistema_Ventas\SistemaVenta.Model\obj\Debug\net8.0\SistemaVenta.Model.sourcelink.json

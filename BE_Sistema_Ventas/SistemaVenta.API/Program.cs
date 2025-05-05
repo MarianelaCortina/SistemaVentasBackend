@@ -29,7 +29,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("NuevaPolitica", app =>
     {
-        app.WithOrigins("https://sistemadeventasapp.netlify.app/", "http://localhost:4200")
+        app.WithOrigins("https://sistemadeventasapp.netlify.app", "http://localhost:4200", "https://localhost:4200")
         .AllowAnyHeader()
         .AllowAnyMethod();
     });

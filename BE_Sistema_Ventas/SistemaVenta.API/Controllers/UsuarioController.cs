@@ -23,6 +23,7 @@ namespace SistemaVenta.API.Controllers
             _jwtService = jwtService ?? throw new ArgumentNullException(nameof(jwtService));
         }
 
+        
         [HttpGet("Lista")]
         public async Task<IActionResult> Lista()
         {
@@ -40,7 +41,8 @@ namespace SistemaVenta.API.Controllers
             }
             return Ok(rsp);
         }
-
+        
+        [AllowAnonymous]
         [HttpPost("IniciarSesion")]
         public async Task<IActionResult> IniciarSesion([FromBody] LoginDTO login)
         {
@@ -49,32 +51,36 @@ namespace SistemaVenta.API.Controllers
                 // Validar credenciales
                 var sesionUsuario = await _usuarioService.ValidarCredenciales(login.Correo, login.Clave);
 
+                if (sesionUsuario == null)
+                {
+                    // Retornar una respuesta válida que Angular pueda manejar
+                    return Ok(new { status = false, msg = "Credenciales incorrectas" });
+                }
+
                 // Generar token JWT
                 var token = _jwtService.GenerarToken(sesionUsuario);
 
                 // Retornar la respuesta en formato JSON
                 return Ok(new
                 {
-                    Status = true,
-                    Value = new
+                    status = true,
+                    value = new
                     {
-                        Token = token,
-                        Usuario = new
-                        {
-                            idUsuario = sesionUsuario.IdUsuario,
-                            correo = sesionUsuario.Correo,
-                            Rol = sesionUsuario.RolDescripcion
-                        }
+                        token = token,
+                        idUsuario = sesionUsuario.IdUsuario,
+                        correo = sesionUsuario.Correo,
+                        rol = sesionUsuario.RolDescripcion
+                        
                     }
                 });
             }
             catch (TaskCanceledException ex) // Excepción lanzada en ValidarCredenciales
             {
-                return Unauthorized(new { mensaje = ex.Message });
+                return Unauthorized(new { status = false, mensaje = ex.Message });
             }
             catch (Exception ex) // Cualquier otro error inesperado
             {
-                return StatusCode(500, new { mensaje = "Error interno en el servidor", detalle = ex.Message });
+                return StatusCode(500, new { status = false, mensaje = "Error interno en el servidor", detalle = ex.Message });
             }
         }
 
@@ -141,31 +147,7 @@ namespace SistemaVenta.API.Controllers
             return Ok(rsp);
         }
 
-        //[HttpPost]
-        //[Route("ActualizarContrasenas")]
-        //public async Task<IActionResult> ActualizarContrasenas()
-        //{
-        //    var rsp = new Response<string>();
-        //    try
-        //    {
-        //        var usuarios = await _usuarioService.Lista(); // Obtén todos los usuarios
-        //        foreach (var usuario in usuarios)
-        //        {
-        //            // Genera un hash para cada contraseña
-        //            usuario.Clave = BCrypt.Net.BCrypt.HashPassword("123");
-        //            //usuario.Clave = BCrypt.Net.BCrypt.HashPassword("NuevaContrasena123");
-        //            await _usuarioService.Editar(usuario); // Actualiza el usuario
-        //        }
-        //        rsp.status = true;
-        //        rsp.value = "Contraseñas actualizadas correctamente";
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        rsp.status = false;
-        //        rsp.msg = ex.Message;
-        //    }
-        //    return Ok(rsp);
-        //}
+        
 
     }
 

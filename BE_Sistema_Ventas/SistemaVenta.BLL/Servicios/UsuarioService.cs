@@ -40,6 +40,7 @@ namespace SistemaVenta.BLL.Servicios
                 throw;
             }
         }
+      
 
         public async Task<SesionDTO> ValidarCredenciales(string correo, string clave)
         {
@@ -67,6 +68,7 @@ namespace SistemaVenta.BLL.Servicios
             {
                 throw;
             }
+
         }
 
         public async Task<UsuarioDTO> Crear(UsuarioDTO model)
